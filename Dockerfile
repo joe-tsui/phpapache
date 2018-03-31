@@ -1,7 +1,7 @@
 FROM php:7.0-apache
 
 RUN apt update \
-	&& && apt -y --no-install-recommends install wget unzip vi \
+	&& apt -y --no-install-recommends install wget unzip vi \
 	
 COPY src/ /var/www/html/
 RUN chmod -R 777 /etc/apache2/
